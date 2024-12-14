@@ -1,0 +1,14 @@
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\bin\Debug\Lab6Part1.exe.config
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\bin\Debug\Lab6Part1.exe
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\bin\Debug\Lab6Part1.pdb
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.exe
+C:\Users\andre\Documents\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.pdb
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\bin\Debug\Lab6Part1.exe.config
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\bin\Debug\Lab6Part1.exe
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\bin\Debug\Lab6Part1.pdb
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.csproj.AssemblyReference.cache
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.csproj.CoreCompileInputs.cache
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.exe
+F:\МА-24\Информатика\Lab6\Lab6Part1\Lab6Part1\obj\Debug\Lab6Part1.pdb

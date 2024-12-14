@@ -1,0 +1,7 @@
+F:\МА-24\Информатика\Lab5\Lab5Part1\bin\Debug\Lab5Part1.exe.config
+F:\МА-24\Информатика\Lab5\Lab5Part1\bin\Debug\Lab5Part1.exe
+F:\МА-24\Информатика\Lab5\Lab5Part1\bin\Debug\Lab5Part1.pdb
+F:\МА-24\Информатика\Lab5\Lab5Part1\obj\Debug\Lab5Part1.csproj.AssemblyReference.cache
+F:\МА-24\Информатика\Lab5\Lab5Part1\obj\Debug\Lab5Part1.csproj.CoreCompileInputs.cache
+F:\МА-24\Информатика\Lab5\Lab5Part1\obj\Debug\Lab5Part1.exe
+F:\МА-24\Информатика\Lab5\Lab5Part1\obj\Debug\Lab5Part1.pdb

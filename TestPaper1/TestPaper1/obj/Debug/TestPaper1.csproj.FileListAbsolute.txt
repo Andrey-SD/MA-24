@@ -1,0 +1,7 @@
+F:\МА-24\Информатика\TestPaper1\TestPaper1\bin\Debug\TestPaper1.exe.config
+F:\МА-24\Информатика\TestPaper1\TestPaper1\bin\Debug\TestPaper1.exe
+F:\МА-24\Информатика\TestPaper1\TestPaper1\bin\Debug\TestPaper1.pdb
+F:\МА-24\Информатика\TestPaper1\TestPaper1\obj\Debug\TestPaper1.csproj.AssemblyReference.cache
+F:\МА-24\Информатика\TestPaper1\TestPaper1\obj\Debug\TestPaper1.csproj.CoreCompileInputs.cache
+F:\МА-24\Информатика\TestPaper1\TestPaper1\obj\Debug\TestPaper1.exe
+F:\МА-24\Информатика\TestPaper1\TestPaper1\obj\Debug\TestPaper1.pdb

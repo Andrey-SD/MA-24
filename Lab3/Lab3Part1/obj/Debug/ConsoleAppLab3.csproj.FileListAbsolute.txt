@@ -1,0 +1,14 @@
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\bin\Debug\ConsoleAppLab3.exe.config
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\bin\Debug\ConsoleAppLab3.exe
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\bin\Debug\ConsoleAppLab3.pdb
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\obj\Debug\ConsoleAppLab3.csproj.AssemblyReference.cache
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\obj\Debug\ConsoleAppLab3.csproj.CoreCompileInputs.cache
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\obj\Debug\ConsoleAppLab3.exe
+F:\AH-24\Информатика\Lab3\ConsoleAppLab3\obj\Debug\ConsoleAppLab3.pdb
+F:\МА-24\Информатика\Lab3\Lab3Part1\obj\Debug\ConsoleAppLab3.csproj.AssemblyReference.cache
+F:\МА-24\Информатика\Lab3\Lab3Part1\obj\Debug\ConsoleAppLab3.csproj.CoreCompileInputs.cache
+F:\МА-24\Информатика\Lab3\Lab3Part1\obj\Debug\ConsoleAppLab3.exe
+F:\МА-24\Информатика\Lab3\Lab3Part1\obj\Debug\ConsoleAppLab3.pdb
+F:\МА-24\Информатика\Lab3\Lab3Part1\bin\Debug\ConsoleAppLab3.exe.config
+F:\МА-24\Информатика\Lab3\Lab3Part1\bin\Debug\ConsoleAppLab3.exe
+F:\МА-24\Информатика\Lab3\Lab3Part1\bin\Debug\ConsoleAppLab3.pdb

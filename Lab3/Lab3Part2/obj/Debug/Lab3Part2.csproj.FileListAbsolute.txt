@@ -1,0 +1,7 @@
+F:\МА-24\Информатика\Lab3\Lab3Part2\obj\Debug\Lab3Part2.csproj.AssemblyReference.cache
+F:\МА-24\Информатика\Lab3\Lab3Part2\obj\Debug\Lab3Part2.csproj.CoreCompileInputs.cache
+F:\МА-24\Информатика\Lab3\Lab3Part2\bin\Debug\Lab3Part2.exe.config
+F:\МА-24\Информатика\Lab3\Lab3Part2\bin\Debug\Lab3Part2.exe
+F:\МА-24\Информатика\Lab3\Lab3Part2\bin\Debug\Lab3Part2.pdb
+F:\МА-24\Информатика\Lab3\Lab3Part2\obj\Debug\Lab3Part2.exe
+F:\МА-24\Информатика\Lab3\Lab3Part2\obj\Debug\Lab3Part2.pdb
