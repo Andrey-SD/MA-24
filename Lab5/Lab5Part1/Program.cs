@@ -18,27 +18,15 @@ namespace Lab5Part1
                 y,
                 rowStep = 1,
                 k = 0;
-            int colls = 5,
-                rows = 5;
+            int colls = 10,
+                rows = 10;
 
             double collStep = rowStep / colls;
 
-            String[,] ch = {
-                { "┌", "┬", "┐" },
-                { "├", "┼", "┤" },
-                { "└", "┴", "┘" }
-            };
-            Console.WriteLine(collStep);
-            Console.WriteLine(buildBorder("top", 3));
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-
             decorationFont(true);
-            
-            //Console.WriteLine("       ┌───────┬───────┬───────┬───────┬───────┬───────┬───────┬───────┬───────┬───────┐");
-            Console.Write("       ");
+            Console.WriteLine("       " + buildBorder("top", colls));
 
+            Console.Write("       ");
             for (double col = 0; col < colls; col++)
             {
                 Console.Write($"│{col * collStep,7:F}");
@@ -50,7 +38,7 @@ namespace Lab5Part1
                 decorationFont(true);
                 Console.Write("───────");
                 decorationFont(false);
-                Console.WriteLine("├───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┤");
+                Console.WriteLine(buildBorder("middle", colls));
                 decorationFont(true);
                 Console.Write($"{row * rowStep,7:F}");
                 decorationFont(false);
@@ -61,8 +49,8 @@ namespace Lab5Part1
                 }
                 Console.WriteLine("│");
             }
-            Console.WriteLine("       └───────┴───────┴───────┴───────┴───────┴───────┴───────┴───────┴───────┘");
 
+            Console.WriteLine("       " + buildBorder("bottom", colls));
             void decorationFont(bool value)
             {
                 if (value)
@@ -77,9 +65,30 @@ namespace Lab5Part1
                 }
             }
 
-            String buildBorder(String position, int cellQuantity)
+            String buildBorder(String position, int cellQuantity, int cellSize = 7)
             {
-                int cellSize = 7;
+
+                String[,] ch = {
+                    { "┌", "┬", "┐" },
+                    { "├", "┼", "┤" },
+                    { "└", "┴", "┘" }
+                };
+
+                byte indexPosition = 0;
+
+                if (position == "top")
+                {
+                    indexPosition = 0;
+                }
+                else if (position == "middle")
+                {
+                    indexPosition = 1;
+                }
+                else if (position == "bottom")
+                {
+                    indexPosition = 2;
+                }
+
                 StringBuilder str = new StringBuilder("");
                 str.Append("");
                 for (int cell = 0; cell < cellQuantity; cell++)
@@ -88,55 +97,13 @@ namespace Lab5Part1
                     {
                         str.Append("─");
                     }
-                    str.Append("┬");
+                    str.Append(ch[indexPosition, 1]);
                 }
-                str.Insert(0, "┌");
-                str.Remove(str.Length-1, 1);
-                str.Insert(str.Length, "┐");
+                str.Insert(0, ch[indexPosition, 0]);
+                str.Remove(str.Length - 1, 1);
+                str.Insert(str.Length, ch[indexPosition, 2]);
                 return str.ToString();
             }
-            //Console.OutputEncoding = System.Text.Encoding.GetEncoding("CP437");
-            ///28591
-            /*Console.WriteLine(s1);
-            Console.WriteLine("┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐");
-
-
-            byte i = 0, k = 0;
-            for (double x = 0; x < 100.0 + t; x += 0.06)
-            {
-                y = Sin(x) * Exp(0.05 * x);
-                //double y = 0.0;
-                if (y < -t) Console.Write($"│{y:000.000}");
-                else
-                    Console.Write($"│{y:0000.000}");
-                i++;
-                if (i > 7)
-                {
-                    Console.Write("│");
-                    Console.WriteLine();
-                    Console.WriteLine("├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤");
-
-
-                    i = 0; k++;
-                }
-                if (k == 21)
-                {
-                    Console.WriteLine("Pause...");
-                    Console.ReadLine();
-                    Console.Clear();
-                    k = 0;
-                }
-            }
-            //Console.WriteLine();
-            while (i <= 7)
-            {
-                Console.Write("│        ");
-                i++;
-            }
-            Console.Write("│");
-            Console.WriteLine();
-            Console.WriteLine("└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘");
-            Console.ReadLine();*/
         }
     }
 }
