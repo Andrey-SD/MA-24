@@ -13,9 +13,9 @@ namespace Lab5Part1
             Console.WindowHeight = 40;
 
             double
-                y = 0,
-                rowStep = 1,
-                k = 0;
+                start = -10,
+                end = 10,
+                rowStep = 0.5;
             int colls = 10,
                 rows = 25;
 
@@ -23,37 +23,39 @@ namespace Lab5Part1
 
             printHeader();
 
-            for (int row = 0; row < rows; row++)
+            for (double row = start; row < end; row+= rowStep)
             {
                 decorationFont(true);
                 Console.Write("──────────");
                 decorationFont(false);
                 Console.WriteLine(buildBorder("middle", colls));
                 decorationFont(true);
-                Console.Write($"{row * rowStep,10:F}");
+                Console.Write($"{row,10:F}");
                 decorationFont(false);
+                double
+                    y, x, numerator, denominator;
                 for (int col = 0; col < colls; col++)
                 {
-                    k = row * rowStep + col * collStep;
+                    x = row * rowStep + col * collStep;
 
-                    double numerator = Math.Log(6.0 * k, 3.0) - Math.Exp(k);
-                    double denominator = k * k - 0.8;
-                    y = (numerator / denominator) + Math.Pow(k, 9.0);
-                    y = Math.Sign(y) * Math.Pow(Math.Abs(y), 1.0 / 3.0);
+                    numerator = Math.Log(6.0 * x, 3.0) - Math.Exp(x);
+                    denominator = x * x - 0.8;
+                    y = (numerator / denominator) + Math.Pow(x, 9.0);
+                    y = Math.Sign((int)y) * Math.Pow(Math.Abs(y), 1.0 / 3.0);
 
-                    if (Math.Abs(k) > 999.00)
+                    if (Math.Abs(y) > 999.00)
                     {
-                        //Console.Write($"│{k,10:E2}");
+                        //Console.Write($"│{x,10:E2}");
                         Console.Write($"│{y,10:E2}");
                     }
                     else
                     {
-                        //Console.Write($"│{k,10:F}");
+                        //Console.Write($"│{x,10:F}");
                         Console.Write($"│{y,10:F}");
                     }
                 }
                 Console.WriteLine("│");
-                if (row % 10 == 0 && row != 0)
+                if (row % 50 == 0 && row != 0)
                 {
                     Console.WriteLine("Натисніть Enter для продовження...");
                     Console.ReadLine();
