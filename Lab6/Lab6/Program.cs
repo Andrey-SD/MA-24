@@ -20,7 +20,6 @@ namespace Lab6
             double maxValue = 4 * (N + 6);
             double x, y;
 
-            //double[,] X = new double[rows, cols];
             double[] X = new double[count];
             double[] Y = new double[0];
 
@@ -45,7 +44,7 @@ namespace Lab6
 
                     // Кубічний корінь зі збереженням знаку
                     y = Math.Sign(y) * Math.Pow(Math.Abs(y), 1.0 / 3.0);
-                    //Console.WriteLine($"{y,7:F2}");
+                    
                     Y = Y.Append(y).ToArray();
                     Console.Write($"{y,8:F2}");
                 }
