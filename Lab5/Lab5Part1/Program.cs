@@ -9,22 +9,24 @@ namespace Lab5Part1
         static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WindowWidth = 125;
-            Console.WindowHeight = 40;
+            //Console.WindowWidth = 150;
+            //Console.WindowHeight = 40;
 
             double
-                start = -100,
-                end = 10,
+                start = -5,
+                end = 5,
                 rowStep = 0.5;
             int colls = 10,
-                rows = 25;
+                visibleRow = 10;
+                //rows = 25;
 
             double collStep = rowStep / colls;
 
             printHeader();
-
-            for (double row = start; row < end; row+= rowStep)
+            int rowCounter = 0;
+            for (double row = start; row <= end; row += rowStep)
             {
+                rowCounter++;
                 decorationFont(true);
                 Console.Write("──────────");
                 decorationFont(false);
@@ -34,15 +36,16 @@ namespace Lab5Part1
                 decorationFont(false);
                 double
                     y, x, numerator, denominator;
+
                 for (int col = 0; col < colls; col++)
                 {
-                    x = row * rowStep + col * collStep;
+                    x = row + col * collStep;
 
                     numerator = Math.Log(6.0 * x, 3.0) - Math.Exp(x);
                     denominator = x * x - 0.8;
                     y = (numerator / denominator) + Math.Pow(x, 9.0);
                     y = Math.Sign((int)y) * Math.Pow(Math.Abs(y), 1.0 / 3.0);
-
+                    y = x;
                     if (Math.Abs(y) > 999.00)
                     {
                         //Console.Write($"│{x,10:E2}");
@@ -55,17 +58,20 @@ namespace Lab5Part1
                     }
                 }
                 Console.WriteLine("│");
-                if (row % 20 == 0 && row != 0)
+                if (rowCounter >= visibleRow)
                 {
                     Console.WriteLine("Натисніть Enter для продовження...");
                     Console.ReadLine();
                     Console.Clear();
                     printHeader();
+                    rowCounter = 0;
                 }
             }
 
             Console.WriteLine("          " + buildBorder("bottom", colls));
-
+            
+            
+            
             void printHeader()
             {
                 decorationFont(true);
@@ -126,4 +132,3 @@ namespace Lab5Part1
         }
     }
 }
-
