@@ -13,7 +13,7 @@ namespace Lab5Part1
             Console.WindowHeight = 40;
 
             double
-                start = -10,
+                start = -100,
                 end = 10,
                 rowStep = 0.5;
             int colls = 10,
@@ -55,7 +55,7 @@ namespace Lab5Part1
                     }
                 }
                 Console.WriteLine("│");
-                if (row % 50 == 0 && row != 0)
+                if (row % 20 == 0 && row != 0)
                 {
                     Console.WriteLine("Натисніть Enter для продовження...");
                     Console.ReadLine();
