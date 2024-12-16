@@ -17,7 +17,7 @@ namespace Lab5Part1
                 end = 5,
                 rowStep = 0.5;
             int colls = 10,
-                visibleRow = 5;
+                visibleRow = 10;
                 //rows = 25;
 
             double collStep = rowStep / colls;
@@ -70,7 +70,7 @@ namespace Lab5Part1
 
             Console.WriteLine("          " + buildBorder("bottom", colls));
             
-            Console.Read();
+            
             
             void printHeader()
             {
